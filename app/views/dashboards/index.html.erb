@@ -1,0 +1,6 @@
+<h1 class="text-2xl font-bold mb-4">Dashboard</h1>
+<p class="text-lg">Total Revenue: $<%= @revenue %></p>
+<div id="chart-1">
+  <%= line_chart @monthly_revenue.transform_values { |cents| cents / 100.0 },
+  xtitle: "Month", ytitle: "Revenue ($)" %>
+</div>
