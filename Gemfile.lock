@@ -1,0 +1,13 @@
+gem 'devise'                # Authentication
+gem 'stripe'                # Stripe API
+gem 'pundit'                # Authorization (roles)
+gem 'chartkick'             # Charts for analytics
+gem 'groupdate'             # For time grouping in charts
+gem 'sidekiq'               # Background jobs
+gem 'redis'                 # Sidekiq dependency
+gem 'pagy'                  # Pagination
+gem 'friendly_id'           # SEO-friendly URLs
+gem 'dotenv-rails'          # Manage secrets
+gem 'wicked_pdf'            # PDF invoicing
+gem 'tailwindcss-rails'     # Styling
+gem 'hotwire-rails'         # Turbo/Stimulus
