@@ -1,0 +1,6 @@
+<h1 class="text-2xl font-bold mb-4">Invoice <%= @invoice.id %></h1>
+<p><strong>Client:</strong> <%= @invoice.client.name %></p>
+<p><strong>Amount:</strong> $<%= @invoice.amount_cents / 100.0 %></p>
+<p><strong>Status:</strong> <%= @invoice.status %></p>
+<p><strong>Due Date:</strong> <%= @invoice.due_date %></p>
+<%= link_to 'Download PDF', invoice_path(@invoice, format: :pdf), class: "bg-gray-500 text-white px-4 py-2 rounded" %>
