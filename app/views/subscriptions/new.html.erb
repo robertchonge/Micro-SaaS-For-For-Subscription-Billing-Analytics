@@ -1,0 +1,16 @@
+<h1 class="text-2xl font-bold mb-4">New Subscription</h1>
+<%= form_with model: @subscription do |f| %>
+  <div class="mb-4">
+    <%= f.label :plan_name, class: "block" %>
+    <%= f.text_field :plan_name, class: "border p-2 w-full" %>
+  </div>
+  <div class="mb-4">
+    <%= f.label :price_cents, class: "block" %>
+    <%= f.number_field :price_cents, class: "border p-2 w-full" %>
+  </div>
+  <div class="mb-4">
+    <%= f.label :interval, class: "block" %>
+    <%= f.select :interval, ['month', 'year'], {}, class: "border p-2 w-full" %>
+  </div>
+  <%= f.submit 'Create', class: "bg-green-500 text-white px-4 py-2 rounded" %>
+<% end %>
