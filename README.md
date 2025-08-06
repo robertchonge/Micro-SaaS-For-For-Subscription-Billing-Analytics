@@ -46,7 +46,7 @@ Database: PostgreSQL
 
 
 
-git clone https://github.com/yourusername/subtrackr.git
+git clone https://github.com/robertchonge/subtrackr.git
 cd subtrackr
 
 2. Install dependencies
@@ -77,9 +77,7 @@ STRIPE_WEBHOOK_SECRET=your_webhook_secret
 rails server
 sidekiq # in another terminal for background jobs
 
-🌐 Live Demo
 
-https://subtrackr-demo.herokuapp.com (replace with your deployed URL)
 
 📊 Screenshots(In the .png files)
 
