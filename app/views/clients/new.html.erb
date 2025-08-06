@@ -1,0 +1,12 @@
+<h1 class="text-2xl font-bold mb-4">New Client</h1>
+<%= form_with model: @client do |f| %>
+  <div class="mb-4">
+    <%= f.label :name, class: "block" %>
+    <%= f.text_field :name, class: "border p-2 w-full" %>
+  </div>
+  <div class="mb-4">
+    <%= f.label :email, class: "block" %>
+    <%= f.email_field :email, class: "border p-2 w-full" %>
+  </div>
+  <%= f.submit 'Create', class: "bg-green-500 text-white px-4 py-2 rounded" %>
+<% end %>
